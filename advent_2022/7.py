@@ -2,7 +2,7 @@
 
 ls = []
 
-with open("dev/advent_2022/7.txt", "r") as file:
+with open("advent_2022/7.txt", "r") as file:
     ls = [x.strip() for x in file]
 
 # print(ls)

@@ -14,7 +14,7 @@ perms = {
 
 round_list = []
 
-with open("dev/advent_2022/2.txt", "r") as file:
+with open("advent_2022/2.txt", "r") as file:
     round_list = [x.strip() for x in file]
 
 tot_score = 0

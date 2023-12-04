@@ -2,7 +2,7 @@
 
 moves_raw = []
 
-with open("dev/advent_2022/9.txt", "r") as file:
+with open("advent_2022/9.txt", "r") as file:
     moves_raw = [x.strip().split() for x in file]
 
 moves = []

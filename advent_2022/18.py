@@ -4,7 +4,7 @@ from math import floor
 
 raw = []
 
-with open("dev/advent_2022/18.txt", "r") as file:
+with open("advent_2022/18.txt", "r") as file:
     raw = [[int(y) for y in x.strip().split(",")] for x in file]
 
 

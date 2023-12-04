@@ -2,7 +2,7 @@
 
 reg_raw = []
 
-with open("dev/advent_2022/10.txt", "r") as file:
+with open("advent_2022/10.txt", "r") as file:
     reg_raw = [x.strip().split() for x in file]
 
 cyc = []

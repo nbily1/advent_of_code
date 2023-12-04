@@ -3,10 +3,10 @@
 instructions = []
 stacks_raw = []
 
-with open("dev/advent_2022/5.txt", "r") as file:
+with open("advent_2022/5.txt", "r") as file:
     instructions = [x.strip() for x in file if x[:4] == "move"]
 
-with open("dev/advent_2022/5.txt", "r") as file:
+with open("advent_2022/5.txt", "r") as file:
     stacks_raw = [x.strip("\n") for x in file if x[:4] != "move"]
 
 stacks = {
