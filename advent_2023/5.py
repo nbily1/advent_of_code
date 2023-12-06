@@ -1,5 +1,7 @@
 # %% 1
-import re
+from datetime import datetime
+
+print(datetime.now())
 
 raw = []
 
@@ -35,26 +37,26 @@ for k in maps:
 
 # print(mapped)
 
-this_seed = 0
+# this_seed = 0
 
-while this_seed < len(seeds):
-    for k in mapped:
-        is_found = False
-        for m in range(len(mapped[k])):
-            if (
-                seeds[this_seed][-1] >= mapped[k][m][0]
-                and seeds[this_seed][-1] <= mapped[k][m][1]
-            ):
-                seeds[this_seed] += [seeds[this_seed][-1] - mapped[k][m][2]]
-                is_found = True
-                break
-        if is_found == False:
-            seeds[this_seed] += [seeds[this_seed][-1]]
-    this_seed += 1
+# while this_seed < len(seeds):
+#     for k in mapped:
+#         is_found = False
+#         for m in range(len(mapped[k])):
+#             if (
+#                 seeds[this_seed][-1] >= mapped[k][m][0]
+#                 and seeds[this_seed][-1] <= mapped[k][m][1]
+#             ):
+#                 seeds[this_seed] += [seeds[this_seed][-1] - mapped[k][m][2]]
+#                 is_found = True
+#                 break
+#         if is_found == False:
+#             seeds[this_seed] += [seeds[this_seed][-1]]
+#     this_seed += 1
 
-print(seeds)
+# print(seeds)
 
-print(min([x[-1] for x in seeds]))
+# print(min([x[-1] for x in seeds]))
 
 # %% 2
 
@@ -113,3 +115,5 @@ for i in range(len(ranges_to_check)):
         lowest = ranges_to_check[i][0]
 
 print(lowest)
+
+print(datetime.now())
