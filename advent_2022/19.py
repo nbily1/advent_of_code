@@ -1,3 +1,5 @@
+raise Exception("Not solved yet :-(")
+
 # %% 1
 import re, json  # , pandas as pd
 from math import floor
