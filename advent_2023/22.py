@@ -1,3 +1,5 @@
+raise Exception("part 2 not solved")
+
 # %% 1
 
 from copy import deepcopy
@@ -62,3 +64,38 @@ print("\n", critical_bricks)
 can_zap = len(bricks) - len(critical_bricks)
 
 print("\n", can_zap)
+
+
+# %% 2
+
+brick_chain = {}
+
+for b in bricks:
+    ghost = [[c[0], c[1], c[2] - 1] for c in bricks[b]["coords"]]
+    resting_on = []
+    for checker in bricks:
+        if checker == b:
+            continue
+        if any(map(lambda cube: cube in ghost, bricks[checker]["coords"])):
+            resting_on += [checker]
+        brick_chain[b] = resting_on
+
+print("\n", brick_chain)
+
+total_moved = 0
+
+for b in bricks:
+    chain = [b]
+    new_bricks = True
+    while new_bricks == True:
+        new_bricks = False
+        for checker in brick_chain:
+            if checker == b or checker in chain or brick_chain[checker] == []:
+                continue
+            elif all(map(lambda x: x in chain, brick_chain[checker])):
+                chain += [checker]
+                new_bricks = True
+    print(b, chain)
+    total_moved += len(chain) - 1
+
+print(total_moved)

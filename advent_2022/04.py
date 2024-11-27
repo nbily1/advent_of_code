@@ -2,7 +2,7 @@
 
 assignment_list = []
 
-with open("advent_2022/4.txt", "r") as file:
+with open("advent_2022/04.txt", "r") as file:
     assignment_list = [x.strip() for x in file]
 
 overlaps = 0

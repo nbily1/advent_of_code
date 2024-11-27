@@ -2,7 +2,7 @@
 
 transmission = []
 
-with open("advent_2022/6.txt", "r") as file:
+with open("advent_2022/06.txt", "r") as file:
     transmission = file.read()
 
 marker = ""

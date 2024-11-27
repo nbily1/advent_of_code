@@ -1,6 +1,6 @@
-# %% 1
+raise Exception("part 2 not solved")
 
-import numpy as np
+# %% 1
 
 raw = []
 

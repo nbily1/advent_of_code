@@ -5,7 +5,7 @@ print(datetime.now())
 
 raw = []
 
-with open("advent_2023/5.txt", "r") as file:
+with open("advent_2023/05.txt", "r") as file:
     raw = [x.strip() for x in file if x.strip() != ""]
 
 print(raw)

@@ -3,7 +3,7 @@
 elf_list = []
 elf_dict = {"1": 0}
 
-with open("advent_2022/1.txt", "r") as file:
+with open("advent_2022/01.txt", "r") as file:
     elf_list = [x.strip() for x in file.readlines()]
 
 elf_id = 1

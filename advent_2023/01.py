@@ -3,7 +3,7 @@ import re
 
 raw = []
 
-with open("advent_2023/1.txt", "r") as file:
+with open("advent_2023/01.txt", "r") as file:
     raw = [x.strip() for x in file]
 
 print(raw)

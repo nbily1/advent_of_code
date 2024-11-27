@@ -1,3 +1,5 @@
+raise Exception("part 2 not solved")
+
 # %% 1
 import pandas as pd
 import networkx as nx

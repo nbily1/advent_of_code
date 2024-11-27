@@ -2,7 +2,7 @@
 
 raw = []
 
-with open("advent_2023/7.txt", "r") as file:
+with open("advent_2023/07.txt", "r") as file:
     raw = [x.strip().split() for x in file if x.strip() != ""]
 
 print(raw)
@@ -70,7 +70,7 @@ print(tot_value)
 
 raw = []
 
-with open("advent_2023/7.txt", "r") as file:
+with open("advent_2023/07.txt", "r") as file:
     raw = [x.strip().split() for x in file if x.strip() != ""]
 
 print(raw)

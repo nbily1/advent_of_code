@@ -1,3 +1,5 @@
+raise Exception("part 2 not solved")
+
 # %% 1
 
 from copy import deepcopy

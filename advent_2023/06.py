@@ -2,7 +2,7 @@
 
 raw = []
 
-with open("advent_2023/6.txt", "r") as file:
+with open("advent_2023/06.txt", "r") as file:
     raw = [
         [int(y) for y in x.split(":")[1].strip().split()]
         for x in file
@@ -35,7 +35,7 @@ print(answer)
 
 raw = []
 
-with open("advent_2023/6.txt", "r") as file:
+with open("advent_2023/06.txt", "r") as file:
     raw = [
         [int(x.split(":")[1].strip().replace(" ", ""))] for x in file if x.strip() != ""
     ]

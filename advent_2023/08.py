@@ -3,7 +3,7 @@
 raw = []
 inst = ""
 
-with open("advent_2023/8.txt", "r") as file:
+with open("advent_2023/08.txt", "r") as file:
     raw = [x.strip() for x in file if x.strip() != ""]
 
 inst = [int(x) for x in raw[0].replace("L", "0").replace("R", "1")]

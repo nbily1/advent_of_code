@@ -2,7 +2,7 @@
 
 forest = []
 
-with open("advent_2022/8.txt", "r") as file:
+with open("advent_2022/08.txt", "r") as file:
     forest = [x.strip() for x in file]
 
 print(forest)

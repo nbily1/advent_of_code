@@ -2,7 +2,7 @@
 
 raw = []
 
-with open("advent_2023/9.txt", "r") as file:
+with open("advent_2023/09.txt", "r") as file:
     raw = [[[int(y) for y in x.strip().split()]] for x in file if x.strip() != ""]
 
 # print(raw)
@@ -30,7 +30,7 @@ print(sum(last_vals))
 
 raw = []
 
-with open("advent_2023/9.txt", "r") as file:
+with open("advent_2023/09.txt", "r") as file:
     raw = [[[int(y) for y in x.strip().split()]] for x in file if x.strip() != ""]
 
 # print(raw)

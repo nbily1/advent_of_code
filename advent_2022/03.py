@@ -7,7 +7,7 @@ for x in range(len(letters)):
 
 sack_list = []
 
-with open("advent_2022/3.txt", "r") as file:
+with open("advent_2022/03.txt", "r") as file:
     sack_list = [x.strip() for x in file]
 
 commons = []
